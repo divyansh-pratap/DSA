@@ -5,6 +5,7 @@ class Solution {
             ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
             for(int i = 0 ; i<V ; i++){
                 graph.add(new ArrayList<>());
+                graph.get(i).add(i);
                 for(int v : adj.get(i)){
                     graph.get(i).add(v);
                 }
